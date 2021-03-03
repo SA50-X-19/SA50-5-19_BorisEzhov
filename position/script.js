@@ -9,15 +9,15 @@ function init() {
     purpleSquare = document.getElementById("purpleSquare");
     greenSquare = document.getElementById("greenSquare");
 
-    document.getElementById("figures1").addEventListener("click", showFigures1);
-    document.getElementById("figures2").addEventListener("click", showFigures2);
-    document.getElementById("figures3").addEventListener("click", showFigures3);
-    document.getElementById("figures4").addEventListener("click", showFigures4);
+    document.getElementById("shapes1").addEventListener("click", showShapes1);
+    document.getElementById("shapes2").addEventListener("click", showShapes2);
+    document.getElementById("shapes3").addEventListener("click", showShapes3);
+    document.getElementById("shapes4").addEventListener("click", showShapes4);
 
-    showFigures1()
+    showShapes1()
 }
 
-function showFigures1() {
+function showShapes1() {
     redSquare.style.position = "relative";
     redSquare.style.backgroundColor = "";
     redSquare.style.border = "solid #FF2020";
@@ -41,17 +41,17 @@ function showFigures1() {
     greenSquare.style.zIndex = 1;
 }
 
-function showFigures2() {
+function showShapes2() {
     configureSquares()
     greenSquare.style.zIndex = 3;
 }
 
-function showFigures3() {
+function showShapes3() {
     configureSquares()
     greenSquare.style.zIndex = 1;
 }
 
-function showFigures4() {
+function showShapes4() {
     redSquare.style.position = "absolute";
     redSquare.style.backgroundColor = "#FFFFFF";
     redSquare.style.border = "";
