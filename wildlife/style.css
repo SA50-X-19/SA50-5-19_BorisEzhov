@@ -6,35 +6,42 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    background-image: url(Assets/Background.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
 header {
-    position: absolute;
     display: flex;
     align-items: center;
-    padding: 8px;
+    margin: 8px;
     width: calc(100% - 2 * 8px);
     height: 70px;
-    /* background-color: gray; */
 }
 
 .logo {
     display: flex;
-    padding-left: 32px;
+    margin-left: 32px;
     color: white;
 }
 
 h1 {
     display: flex;
-    padding-left: 16px;
+    margin-left: 16px;
     text-transform: uppercase;
     align-items: center;
-    font-style: normal;
     font-weight: 300;
     font-size: 32px;
 }
 
 nav {
     width: 100%;
-    padding-right: 32px;
+    margin-right: 32px;
 }
 
 nav > ul {
@@ -47,7 +54,7 @@ nav > ul {
 }
 
 .navLink {
-    padding-right: 64px;
+    margin-right: 64px;
     text-decoration: none;
     background: none;
     font-size: 16px;
@@ -55,9 +62,8 @@ nav > ul {
     color: white;
 }
 
-
 .navImage {
-    padding-right: 56px;
+    margin-right: 56px;
     height: 25%;
     width: 25%;
 }
@@ -68,21 +74,62 @@ nav > ul {
     background: none;
     font-size: 16px;
     font-weight: 250;
-    border: 1.5px solid #CD6326;
-    box-sizing: border-box;
+    border: 2px solid #CD6326;
     border-radius: 5px;
+    box-sizing: border-box;
     color: white;
 }
 
-.navLink:hover, .navImage:hover, .navButton:hover {
+.navLink:hover, .navImage:hover {
     opacity: 0.5;
 }
 
-main {
-    background-color: #02160b;
+.navButton:hover {
+    background: #CD6326;
 }
 
-main > img {
-    max-width: 100%;
-    width: 100%;
+.navButton:active {
+    background: #8F5613;
+    border: 2px solid #8F5613;
+}
+
+main {
+    padding: 120px;
+}
+
+.survival {
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 2px;
+    color: #CD6326;
+}
+
+.survivalText {
+    margin-bottom: 50px;
+    color: white;
+    width: 274px;
+    height: 108px;
+}
+
+.survivalButton {
+    background: #CD6326;
+    border-radius: 10px;
+    width: 160px;
+    height: 60px;
+    border: none;
+}
+
+.survivalButton > a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.survivalButton:hover {
+    background: #E39128;
+}
+
+.survivalButton:active {
+    background: #8F5613;
 }
