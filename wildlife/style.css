@@ -14,6 +14,7 @@ body {
     background-image: url(Assets/Background.jpg);
     background-position: top center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 header {
