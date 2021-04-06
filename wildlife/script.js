@@ -5,7 +5,7 @@ window.onresize = resizeBackground;
 
 // Functions
 function init() {
-    resizeBackground;
+    resizeBackground();
 }
 
 function resizeBackground() {
