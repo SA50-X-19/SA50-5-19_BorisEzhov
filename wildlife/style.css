@@ -249,3 +249,13 @@ main > form {
     border-radius: 0px 5px 5px 0px;
     font-size: 23px;
 }
+
+.submitButton:hover {
+    background: #E39128;
+    border: #E39128;
+}
+
+.submitButton:active {
+    background: #8F5613;
+    border: #8F5613;
+}
